@@ -1,0 +1,18 @@
+<p>Burp Suite Extension for inserting a magic byte into a request.</p>
+
+<p>Some web applications use a security feature for their file upload checks which validates the first bytes of the sent data. This is  also known as Magic Byte, and allows for the identification of the file type.</p>
+
+<p>Now lets say you try to upload <code>&lt;?php echo 'test'?&gt;</code> the web application will throw an error saying that it wont accept the file.</p>
+
+<p>However if you make it <code>GIF87a &lt;?php echo 'test'?&gt;</code> in some cases the web application will think its a GIF and will allow the file to be uploaded!</p>
+
+<p>This extension will allow you to insert these Magic Bytes straight from burp suite into your request.</p>
+
+<p>Available magic bytes</p>
+<ul>
+	<li>JPG</li>
+	<li>PNG</li>
+	<li>JPEG</li>
+	<li>GIF89a</li>
+	<li>GIF87a</li>
+</ul>

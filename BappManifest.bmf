@@ -1,0 +1,13 @@
+Uuid: 517909d862cd4d3dbc48c4cc1dc61f87
+ExtensionType: 2
+Name: Magic Byte Selector
+RepoName: magic-byte-selector
+ScreenVersion: 1.0
+SerialVersion: 2
+MinPlatformVersion: 0
+ProOnly: False
+Author: WebSec B.V.
+ShortDescription: Insert a magic byte into a request.
+EntryPoint: MagicByteSelector.py
+BuildCommand: 
+SupportedProducts: Pro, Community
